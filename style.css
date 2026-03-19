@@ -704,6 +704,94 @@ section { padding: 88px 0; }
 .contact-item small { display: block; font-size: .75rem; color: var(--muted); margin-top: 2px; }
 .contact-map { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 
+/* ============ ロゴ画像 ============ */
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.logo-img-footer {
+  height: 36px;
+  filter: brightness(0) invert(1);
+  opacity: .85;
+}
+
+/* ============ パンくずリスト ============ */
+.breadcrumb {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  margin-top: 70px;
+}
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .82rem;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--orange); }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* ============ 応募CTA（トップページ用） ============ */
+.apply-cta {
+  background: linear-gradient(135deg, var(--orange) 0%, #e06500 100%);
+  padding: 72px 0;
+}
+.apply-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.apply-cta h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.apply-cta p { color: rgba(255,255,255,.85); font-size: .95rem; }
+.btn-lg { padding: 18px 48px; font-size: 1.05rem; white-space: nowrap; }
+.apply-cta .btn-primary {
+  background: #fff;
+  color: var(--orange);
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+.apply-cta .btn-primary:hover { background: #fff5ee; }
+
+/* ============ 応募ページ固有 ============ */
+.apply-page { padding-top: 48px; }
+
+.apply-job-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #fff8ee, #fff3e0);
+  border: 2px solid var(--orange);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.apply-job-label {
+  font-size: .75rem;
+  font-weight: 800;
+  background: var(--orange);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+.apply-job-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
 /* ============ フッター ============ */
 .footer {
   background: #1a1a1a;
